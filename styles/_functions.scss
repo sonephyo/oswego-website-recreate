@@ -1,0 +1,22 @@
+//Font size options
+
+$font-sizes: (
+    "xxs": 0.4rem,
+    "xs" : 0.6rem,
+    "s" : 0.8rem,
+    "sm": 0.9rem,
+    "m" : 1rem,
+    "l" : 1.2rem,
+    "xl" : 1.4rem,
+    "xxl" : 1.6rem,
+    "xxxl" : 1.8rem,
+    "header": 6rem
+);
+
+@function size($size) {
+    @if (map-has-key($font-sizes, $size)) {
+        @return map-get($font-sizes, $size);
+    } @else {
+        @error "Invalid font size specificed";
+    }
+}

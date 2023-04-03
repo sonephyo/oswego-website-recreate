@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,80 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: rgb(236, 199, 36);
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 6rem;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+h2 {
+  padding: 1rem 0;
+}
+
+h1,
+h2 {
+  position: relative;
+}
+h1::before,
+h2::before {
+  content: "";
+  background-color: rgb(236, 199, 36);
+  position: absolute;
+  width: 10%;
+  height: 4px;
+  bottom: 5%;
+}
+
+header {
+  height: 120vh;
+}
+
+.main-body {
+  padding: 18rem 4rem 3rem 4rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/imgs/main_pic.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.main-body p {
+  display: inline-block;
+  padding-left: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.main_page_button {
+  background: rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 2px;
 }
 
 .nav,
@@ -36,6 +111,9 @@ a {
   padding: 1rem;
 }
 
+.top-sub-sub-sub-nav:first-child {
+  font-family: "Inter", sans-serif;
+}
 .top-sub-sub-sub-nav ul {
   display: flex;
   flex-direction: row;
@@ -56,18 +134,4 @@ a {
   border-radius: 50%;
   color: white;
   background-color: green;
-}
-
-header {
-  height: 100vh;
-}
-
-.main-body {
-  padding: 20rem 4rem 3rem 4rem;
-  background-image: url(/imgs/main_pic.jpg);
-  min-height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
 }/*# sourceMappingURL=index.css.map */

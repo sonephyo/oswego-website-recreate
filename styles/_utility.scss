@@ -1,0 +1,39 @@
+@import "functions";
+@import "variables";
+
+// These are the default format of tags for this website
+// font-family: 'Inter', sans-serif;
+
+h4 {
+  text-transform: uppercase;
+  color: $yellow_color;
+  font-family: "Inter", sans-serif;
+  font-size: size("s");
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: size("header");
+  color: white;
+  padding: 0.5rem 0;
+
+
+}
+
+h2 {
+    padding: 1rem 0;
+}
+
+h1,
+h2 {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: $yellow_color;
+    position: absolute;
+    width: 10%;
+    height: 4px;
+    bottom: 5%;
+  }
+}
