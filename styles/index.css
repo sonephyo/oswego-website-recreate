@@ -25,10 +25,14 @@ button {
   font-weight: bold;
 }
 
+h4,
+p {
+  font-family: "Inter", sans-serif;
+}
+
 h4 {
   text-transform: uppercase;
   color: rgb(236, 199, 36);
-  font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
@@ -41,6 +45,7 @@ h1 {
 
 h2 {
   padding: 1rem 0;
+  font-size: 2.5rem;
 }
 
 h1,
@@ -53,8 +58,20 @@ h2::before {
   background-color: rgb(236, 199, 36);
   position: absolute;
   width: 10%;
-  height: 4px;
-  bottom: 5%;
+  height: 0.2rem;
+  bottom: 0.5rem;
+}
+
+p {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 3px;
 }
 
 header {
@@ -72,20 +89,43 @@ header {
 }
 .main-body p {
   display: inline-block;
-  padding-left: 1rem;
   color: white;
   font-family: "Inter", sans-serif;
   font-style: italic;
   font-size: 0.9rem;
-  font-weight: 300;
 }
 
 .main_page_button {
   background: rgba(0, 0, 0, 0.3);
-  margin: 1rem 0;
-  padding: 1rem 2rem;
   border: 2px solid white;
-  border-radius: 2px;
+}
+
+.admitted-students-section {
+  background-color: rgb(18, 85, 53);
+  background-image: url("/imgs/waves.svg");
+}
+
+.admitted-students-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45vh;
+}
+.admitted-students-div h2 {
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+.admitted-students-div h2::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.admitted-students-div button {
+  color: rgb(18, 85, 53);
+  background-color: white;
+}
+.admitted-students-div p {
+  color: white;
 }
 
 .nav,
@@ -113,6 +153,9 @@ header {
 
 .top-sub-sub-sub-nav:first-child {
   font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: gray;
 }
 .top-sub-sub-sub-nav ul {
   display: flex;

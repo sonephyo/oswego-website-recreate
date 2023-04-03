@@ -4,24 +4,27 @@
 // These are the default format of tags for this website
 // font-family: 'Inter', sans-serif;
 
+h4,
+p {
+  font-family: "Inter", sans-serif;
+}
+
 h4 {
   text-transform: uppercase;
   color: $yellow_color;
-  font-family: "Inter", sans-serif;
   font-size: size("s");
   letter-spacing: 0.1rem;
 }
 
 h1 {
-    font-size: size("header");
+  font-size: size("header");
   color: white;
   padding: 0.5rem 0;
-
-
 }
 
 h2 {
-    padding: 1rem 0;
+  padding: 1rem 0;
+  font-size: size("sub-header");
 }
 
 h1,
@@ -33,7 +36,23 @@ h2 {
     background-color: $yellow_color;
     position: absolute;
     width: 10%;
-    height: 4px;
-    bottom: 5%;
+    height: 0.2rem;
+    bottom: 0.5rem;
   }
+}
+
+// paragraph styling
+
+p {
+  padding: 1rem;
+  font-size: size("m");
+  font-weight: 300;
+}
+
+//button styling
+
+button {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 3px;
 }

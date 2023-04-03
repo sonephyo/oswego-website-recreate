@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 // Main Body
 
@@ -9,32 +10,56 @@ header {
 .main-body {
   padding: 18rem 4rem 3rem 4rem;
   //Background image
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/imgs/main_pic.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url(/imgs/main_pic.jpg);
   height: 100%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 
-
   p {
-    display:inline-block;
-    padding-left: 1rem;
+    display: inline-block;
     color: $white_color;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: italic;
     font-size: size("sm");
-    font-weight:300;
   }
 }
 
-
 .main_page_button {
-
   background: rgba(0, 0, 0, 0.3);
-    margin: 1rem 0;
-    padding: 1rem 2rem;
+  border: 2px solid white;
+}
 
-    border: 2px solid white;
-    border-radius: 2px;
+//Admitted Students section
+.admitted-students-section {
+  background-color: $green_color;
+  background-image: url('/imgs/waves.svg');
+}
+
+.admitted-students-div {
+  @include flex(column);
+  align-items: center;
+  height: 45vh;
+
+  h2 {
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  button {
+    color:$green_color;
+    background-color: white;
+  }
+
+  p {
+    color:$white_color;
+  }
 }

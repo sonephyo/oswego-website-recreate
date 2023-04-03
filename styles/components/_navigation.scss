@@ -1,3 +1,6 @@
+@import '../variables';
+@import '../functions';
+
 
 .nav,
 .top-sub-nav {
@@ -28,7 +31,11 @@
 
   &:first-child {
     font-family: 'Inter', sans-serif;
+    font-size: size("s");
+    font-weight: bold;
+    color: gray;
   }
+  
   ul {
     @include flex(row);
     justify-content: flex-end;
