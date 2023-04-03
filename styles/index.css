@@ -1,1 +1,73 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav,
+.top-sub-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav {
+  justify-content: space-between;
+  height: 7rem;
+  padding: 1rem 3rem;
+  background-color: whitesmoke;
+}
+.nav .logo {
+  width: 12rem;
+}
+
+.top-sub-sub-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.top-sub-sub-sub-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.top-sub-sub-sub-nav li {
+  padding: 0.5rem 1rem;
+}
+
+.search-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: white;
+  background-color: green;
+}
+
+header {
+  height: 100vh;
+}
+
+.main-body {
+  padding: 20rem 4rem 3rem 4rem;
+  background-image: url(/imgs/main_pic.jpg);
+  min-height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}/*# sourceMappingURL=index.css.map */

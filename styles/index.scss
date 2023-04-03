@@ -1,0 +1,71 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "utility";
+
+
+.nav,
+.top-sub-nav {
+  @include flex(row);
+  align-items: center;
+}
+
+.nav {
+  justify-content: space-between;
+
+  height: 7rem;
+  padding: 1rem 3rem;
+  background-color: whitesmoke;
+
+  .logo {
+    width: 12rem;
+  }
+}
+
+.top-sub-sub-nav {
+  @include flex(column);
+  padding: 1rem;
+}
+
+.top-sub-sub-sub-nav {
+  ul {
+    @include flex(row);
+    justify-content: flex-end;
+  }
+
+  li {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.search-icon {
+  @include flex(row);
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: white;
+  background-color: green;
+}
+
+// Main Body
+
+header {
+    height: 100vh;
+}
+
+.main-body {
+    padding: 20rem 4rem 3rem 4rem;
+
+
+    //Background image
+  background-image: url(/imgs/main_pic.jpg);
+  min-height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
