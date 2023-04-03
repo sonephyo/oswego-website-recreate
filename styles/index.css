@@ -151,11 +151,13 @@ header {
   padding: 1rem;
 }
 
+.top-sub-sub-sub-nav {
+  color: gray;
+}
 .top-sub-sub-sub-nav:first-child {
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
-  color: gray;
 }
 .top-sub-sub-sub-nav ul {
   display: flex;
@@ -164,6 +166,26 @@ header {
 }
 .top-sub-sub-sub-nav li {
   padding: 0.5rem 1rem;
+}
+
+.sub-1 {
+  filter: brightness(70%);
+}
+.sub-1::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 1.5rem;
+  width: 1px;
+}
+
+.sub-2 img {
+  width: 1rem;
+  color: black;
+}
+
+.lower_nav {
+  font-size: 1.6rem;
+  color: rgb(18, 85, 53);
 }
 
 .search-icon {
@@ -176,5 +198,5 @@ header {
   height: 3rem;
   border-radius: 50%;
   color: white;
-  background-color: green;
+  background-color: rgb(18, 85, 53);
 }/*# sourceMappingURL=index.css.map */

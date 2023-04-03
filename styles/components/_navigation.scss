@@ -1,6 +1,5 @@
-@import '../variables';
-@import '../functions';
-
+@import "../variables";
+@import "../functions";
 
 .nav,
 .top-sub-nav {
@@ -9,8 +8,6 @@
 }
 
 .nav {
-  
-  
   justify-content: space-between;
 
   height: 7rem;
@@ -28,14 +25,14 @@
 }
 
 .top-sub-sub-sub-nav {
+  color: gray;
 
   &:first-child {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: size("s");
     font-weight: bold;
-    color: gray;
   }
-  
+
   ul {
     @include flex(row);
     justify-content: flex-end;
@@ -44,6 +41,29 @@
   li {
     padding: 0.5rem 1rem;
   }
+}
+
+.sub-1 {
+  filter: brightness(70%);
+
+  &::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 1.5rem;
+    width: 1px;
+  }
+}
+
+.sub-2 {
+  img {
+    width: 1rem;
+    color: black;
+  }
+}
+
+.lower_nav {
+  font-size: 1.6rem;
+  color: $green_color;
 }
 
 .search-icon {
@@ -56,5 +76,5 @@
   height: 3rem;
   border-radius: 50%;
   color: white;
-  background-color: green;
+  background-color: $green_color;
 }
