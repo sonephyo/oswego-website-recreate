@@ -35,7 +35,7 @@ header {
 //Admitted Students section
 .admitted-students-section {
   background-color: $green_color;
-  background-image: url('/imgs/waves.svg');
+  background-image: url("/imgs/waves.svg");
 }
 
 .admitted-students-div {
@@ -55,11 +55,26 @@ header {
   }
 
   button {
-    color:$green_color;
+    color: $green_color;
     background-color: white;
   }
 
   p {
-    color:$white_color;
+    color: $white_color;
   }
+}
+
+//FUTURE LAKERS
+.future-lakers {
+  @include flex(column);
+  align-content: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  display: flow-root;
+}
+
+.two-girls {
+  width: 50%;
+  float: left;
+  padding-right: 2rem;
 }

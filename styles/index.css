@@ -63,9 +63,10 @@ h2::before {
 }
 
 p {
-  padding: 1rem;
+  padding: rem;
   font-size: 1rem;
   font-weight: 300;
+  line-height: 1.5rem;
 }
 
 button {
@@ -126,6 +127,21 @@ header {
 }
 .admitted-students-div p {
   color: white;
+}
+
+.future-lakers {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  display: flow-root;
+}
+
+.two-girls {
+  width: 50%;
+  float: left;
+  padding-right: 2rem;
 }
 
 .nav,
