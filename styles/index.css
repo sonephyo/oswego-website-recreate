@@ -73,6 +73,11 @@ button {
   margin: 1rem 0;
   padding: 1rem 2rem;
   border-radius: 3px;
+  color: rgb(18, 85, 53);
+}
+
+.btn-type-2 {
+  background-color: white;
 }
 
 header {
@@ -81,7 +86,7 @@ header {
 
 .main-body {
   padding: 18rem 4rem 3rem 4rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/imgs/main_pic.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../imgs/main_pic.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -121,27 +126,18 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
-.admitted-students-div button {
-  color: rgb(18, 85, 53);
-  background-color: white;
-}
 .admitted-students-div p {
   color: white;
 }
 
 .future-lakers {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  flex-direction: row;
+  height: 75vh;
   padding: 2rem 4rem;
-  display: flow-root;
 }
-
-.two-girls {
-  width: 50%;
-  float: left;
-  padding-right: 2rem;
+.future-lakers div {
+  padding: 3rem 2rem;
 }
 
 .nav,
