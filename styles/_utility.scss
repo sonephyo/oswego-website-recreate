@@ -21,16 +21,18 @@ h1 {
   font-size: size("header");
   color: white;
   padding: 0.5rem 0;
+    position: relative;
+
+  &::before {
+    @include title_line();
+    height: 0.2rem;
+  }
 }
 
 h2 {
   padding: 1rem 0;
   font-size: size("sub-header");
-}
-
-h1,
-h2{
-  position: relative;
+    position: relative;
 
   &::before {
     @include title_line();

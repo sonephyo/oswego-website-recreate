@@ -1,6 +1,7 @@
 @import "../variables";
 @import "../mixins";
 @import "../components/btn";
+@import "../components/format-categories";
 
 // Main Body
 
@@ -80,26 +81,16 @@ header {
   .two-girls {
     width: 50%;
   }
-
 }
 
 //Trending section
 
-.trending-title {
-  text-align: center;
-  padding: 2rem;
-}
-
 .trending-now {
   background-color: whitesmoke;
+  padding-bottom: 2rem;
 
   .grid {
-    padding: 0 $main_padding;
-
-    display: grid;
-    grid-auto-flow: column;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    @include grid(3);
   }
 
   .grid-element {
@@ -129,7 +120,7 @@ header {
 .trending-links {
   margin: 0;
   padding: 1.5rem 0 0 0;
-  
+
   i {
     padding: 0 1rem;
     font-size: size("ml");
@@ -157,6 +148,39 @@ header {
 
     justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.9);
+  }
+}
 
+// Return on investment
+
+.value-and-outcome {
+  background-color: whitesmoke;
+
+  .sub-title {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .grid {
+    @include grid(4);
+  }
+
+  .grid-element {
+    background-color: $white_color;
+    border-radius: 3px;
+
+    h2{
+      font-size: size("l");
+    }
+  }
+
+  p {
+    font-size: size("s");
+  }
+
+  .container {
+    padding: 2rem;
   }
 }

@@ -1,15 +1,22 @@
-
 // Easy shortcut for using flex
 @mixin flex($direction) {
-    display:flex;
-    flex-direction: $direction;
+  display: flex;
+  flex-direction: $direction;
 }
 
 @mixin title_line() {
-    content: "";
-    background-color: $yellow_color;
-    position: absolute;
-    width: 10%;
-    height: 0.2rem;
-    bottom: 0.5rem;
+  content: "";
+  background-color: $yellow_color;
+  position: absolute;
+  width: 10%;
+  height: 0.1rem;
+  bottom: 0.5rem;
+}
+
+@mixin grid($number_of_grid) {
+  padding: 0 $main_padding;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  grid-template-columns: repeat($number_of_grid, 1fr);
 }
