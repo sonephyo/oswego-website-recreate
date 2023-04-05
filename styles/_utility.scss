@@ -1,5 +1,6 @@
 @import "functions";
 @import "variables";
+@import "mixins";
 
 // These are the default format of tags for this website
 // font-family: 'Inter', sans-serif;
@@ -11,7 +12,7 @@ p {
 
 h4 {
   text-transform: uppercase;
-  color: $yellow_color;
+  color: $green_color;
   font-size: size("s");
   letter-spacing: 0.1rem;
 }
@@ -28,23 +29,18 @@ h2 {
 }
 
 h1,
-h2 {
+h2{
   position: relative;
 
   &::before {
-    content: "";
-    background-color: $yellow_color;
-    position: absolute;
-    width: 10%;
-    height: 0.2rem;
-    bottom: 0.5rem;
+    @include title_line();
   }
 }
 
 // paragraph styling
 
 p {
-  padding: rem;
+
   font-size: size("m");
   font-weight: 300;
   line-height: 1.5rem;

@@ -32,7 +32,7 @@ p {
 
 h4 {
   text-transform: uppercase;
-  color: rgb(236, 199, 36);
+  color: rgb(18, 85, 53);
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
@@ -63,7 +63,6 @@ h2::before {
 }
 
 p {
-  padding: rem;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
@@ -77,6 +76,12 @@ button {
 }
 
 .btn-type-2 {
+  background-color: white;
+}
+
+.btn-type-3 {
+  border: 1px solid rgb(18, 85, 53);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 
@@ -99,11 +104,16 @@ header {
   font-family: "Inter", sans-serif;
   font-style: italic;
   font-size: 0.9rem;
+  padding: 1rem;
+}
+.main-body h4 {
+  color: rgb(236, 199, 36);
 }
 
 .main_page_button {
   background: rgba(0, 0, 0, 0.3);
   border: 2px solid white;
+  color: white;
 }
 
 .admitted-students-section {
@@ -133,11 +143,76 @@ header {
 .future-lakers {
   display: flex;
   flex-direction: row;
-  height: 75vh;
+  height: 80vh;
   padding: 2rem 4rem;
 }
 .future-lakers div {
   padding: 3rem 2rem;
+}
+.future-lakers .two-girls {
+  width: 50%;
+}
+
+.trending-title {
+  text-align: center;
+  padding: 2rem;
+}
+
+.trending-now {
+  background-color: whitesmoke;
+}
+.trending-now .grid {
+  padding: 0 4rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.trending-now .grid-element {
+  background-color: white;
+  border-radius: 3px;
+}
+.trending-now .grid-element h2 {
+  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+}
+.trending-now .grid-element p {
+  font-size: 0.8rem;
+}
+.trending-now .grid-element img {
+  width: 100%;
+  border-radius: 3px;
+}
+.trending-now .grid-element .container {
+  padding: 2rem;
+}
+
+.trending-links {
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+}
+.trending-links i {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  transform: translateY(3px);
+}
+
+.vibrant-community {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 60vh;
+  background-image: url("../imgs/new-oswego-collage-life_0.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.vibrant-community .container {
+  width: 50%;
+  padding: 2rem;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .nav,

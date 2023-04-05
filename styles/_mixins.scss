@@ -4,3 +4,12 @@
     display:flex;
     flex-direction: $direction;
 }
+
+@mixin title_line() {
+    content: "";
+    background-color: $yellow_color;
+    position: absolute;
+    width: 10%;
+    height: 0.2rem;
+    bottom: 0.5rem;
+}
