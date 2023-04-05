@@ -223,6 +223,7 @@ header {
 
 .value-and-outcome {
   background-color: whitesmoke;
+  padding-bottom: 2rem;
 }
 .value-and-outcome .sub-title::before {
   left: 50%;
@@ -242,11 +243,19 @@ header {
 .value-and-outcome .grid-element h2 {
   font-size: 1.4rem;
 }
+.value-and-outcome .grid-element h2::before {
+  width: 4rem;
+}
 .value-and-outcome p {
   font-size: 0.8rem;
+  padding: 1.4rem 0;
 }
 .value-and-outcome .container {
   padding: 2rem;
+}
+
+.feedback {
+  background-color: rgb(18, 85, 53);
 }
 
 .nav,

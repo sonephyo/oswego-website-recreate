@@ -155,6 +155,8 @@ header {
 
 .value-and-outcome {
   background-color: whitesmoke;
+  padding-bottom: 2rem;
+
 
   .sub-title {
     &::before {
@@ -173,14 +175,25 @@ header {
 
     h2{
       font-size: size("l");
+
+      &::before {
+        width: 4rem;
+      }
     }
   }
 
   p {
     font-size: size("s");
+    padding: size("l") 0;
   }
 
   .container {
     padding: 2rem;
   }
+}
+
+// Feedback section
+
+.feedback {
+  background-color: $green_color;
 }
