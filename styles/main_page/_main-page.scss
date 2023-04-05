@@ -77,10 +77,6 @@ header {
   div {
     padding: 3rem 2rem;
   }
-
-  .two-girls {
-    width: 50%;
-  }
 }
 
 //Trending section
@@ -196,4 +192,37 @@ header {
 
 .feedback {
   background-color: $green_color;
+  padding: $main_padding;
+  position: relative;
+
+}
+
+.feedback-flex {
+
+  @include flex("row");
+  img {
+    width: 35rem;
+  }
+
+}
+
+.feedback-paragraph {
+  padding:0 1rem;
+
+  h3 {
+    color: $white_color;
+    font-size: size("xl");
+  }
+}
+
+.quote {
+  position: absolute;
+  padding: 0.8rem;
+  border-radius: 50%;
+  top: -10%;
+  left: 50%;
+  font-size: size("xxl");
+  background-color: $green_color;
+  color:rgb(11, 60, 36);
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.47);
 }
