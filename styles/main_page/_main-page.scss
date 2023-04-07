@@ -258,7 +258,7 @@ header {
 }
 
 .go-oswego-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("/imgs/go-oswego-shineman-sci.jpg");
   height: 80vh;
   width: 100%;
@@ -271,14 +271,110 @@ header {
   align-items: center;
 
   h4 {
-    color:$yellow_color;
+    color: $yellow_color;
   }
 
-  h2{
+  h2 {
     color: $white_color;
   }
 
   div {
     width: 50%;
+  }
+}
+
+//Footer section
+
+footer {
+  position: relative;
+  padding: $main_padding;
+  background-color: $darkgray_color;
+  height: 90vh;
+
+  a,
+  .suny-oswego-text {
+    font-family: "Inter", sans-serif;
+  }
+
+  p,
+  a {
+    color: $white_color;
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  li {
+    padding: 3px;
+  }
+  ul {
+    padding: 1rem 0;
+  }
+}
+
+.upper-footer {
+  @include flex(row);
+  justify-content: space-between;
+
+  img {
+    width: 90%;
+  }
+
+  p {
+    padding: 0.5rem 3rem;
+  }
+
+  h4 {
+    position: relative;
+    bottom: 0;
+  }
+
+  h4::before {
+    position: absolute;
+    content: "";
+    width: 120%;
+    height: 1px;
+    background-color: $gray_color;
+    bottom: -50%;
+  }
+}
+
+.footer-right-gp {
+  @include flex(row);
+}
+
+.footer-main-gp {
+  position: relative;
+  padding: 1rem;
+  width: 17rem;
+}
+
+.footer-button {
+  width: 100%;
+  color: $white_color;
+  background-color: black;
+  border: 2px solid $white_color;
+}
+
+.footer-bottom {
+  position: absolute;
+  width: 90%;
+  color: $white_color;
+  padding: 1rem;
+
+  @include flex(row);
+  justify-content: space-between;
+  bottom: 10%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $gray_color;
+    top: -50%;
   }
 }

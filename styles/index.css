@@ -332,6 +332,93 @@ header {
   width: 50%;
 }
 
+footer {
+  position: relative;
+  padding: 4rem;
+  background-color: rgb(27, 27, 27);
+  height: 90vh;
+}
+footer a,
+footer .suny-oswego-text {
+  font-family: "Inter", sans-serif;
+}
+footer p,
+footer a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+footer a {
+  text-decoration: underline;
+}
+footer li {
+  padding: 3px;
+}
+footer ul {
+  padding: 1rem 0;
+}
+
+.upper-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.upper-footer img {
+  width: 90%;
+}
+.upper-footer p {
+  padding: 0.5rem 3rem;
+}
+.upper-footer h4 {
+  position: relative;
+  bottom: 0;
+}
+.upper-footer h4::before {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 1px;
+  background-color: gray;
+  bottom: -50%;
+}
+
+.footer-right-gp {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-main-gp {
+  position: relative;
+  padding: 1rem;
+  width: 17rem;
+}
+
+.footer-button {
+  width: 100%;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.footer-bottom {
+  position: absolute;
+  width: 90%;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 10%;
+}
+.footer-bottom::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  top: -50%;
+}
+
 .nav,
 .top-sub-nav {
   display: flex;
