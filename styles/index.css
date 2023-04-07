@@ -310,6 +310,28 @@ header {
   letter-spacing: 0.2rem;
 }
 
+.go-oswego-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("/imgs/go-oswego-shineman-sci.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.go-oswego-section h4 {
+  color: rgb(236, 199, 36);
+}
+.go-oswego-section h2 {
+  color: white;
+}
+.go-oswego-section div {
+  width: 50%;
+}
+
 .nav,
 .top-sub-nav {
   display: flex;

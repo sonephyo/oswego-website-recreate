@@ -243,10 +243,10 @@ header {
   padding: 0.5rem;
 
   h2 {
-  &::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .social-media {
@@ -255,5 +255,30 @@ header {
     font-size: size("l");
     letter-spacing: 0.2rem;
   }
+}
 
+.go-oswego-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("/imgs/go-oswego-shineman-sci.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @include flex(row);
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    color:$yellow_color;
+  }
+
+  h2{
+    color: $white_color;
+  }
+
+  div {
+    width: 50%;
+  }
 }
