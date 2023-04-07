@@ -259,18 +259,28 @@ header {
 
 .feedback-flex {
   display: flex;
-  flex-direction: "row";
+  flex-direction: row;
 }
 .feedback-flex img {
-  width: 35rem;
+  width: 100%;
 }
 
 .feedback-paragraph {
-  padding: 0 1rem;
+  padding: 0 2rem;
+  max-width: 50%;
 }
 .feedback-paragraph h3 {
   color: white;
   font-size: 1.8rem;
+}
+.feedback-paragraph h4 {
+  color: rgb(236, 199, 36);
+}
+.feedback-paragraph .user-feedback-name {
+  padding-top: 25%;
+}
+.feedback-paragraph .user-feedback-name p {
+  color: white;
 }
 
 .quote {

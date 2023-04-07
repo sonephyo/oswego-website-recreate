@@ -153,7 +153,6 @@ header {
   background-color: whitesmoke;
   padding-bottom: 2rem;
 
-
   .sub-title {
     &::before {
       left: 50%;
@@ -169,7 +168,7 @@ header {
     background-color: $white_color;
     border-radius: 3px;
 
-    h2{
+    h2 {
       font-size: size("l");
 
       &::before {
@@ -194,24 +193,34 @@ header {
   background-color: $green_color;
   padding: $main_padding;
   position: relative;
-
 }
 
 .feedback-flex {
-
-  @include flex("row");
+  @include flex(row);
   img {
-    width: 35rem;
+    width: 100%;
   }
-
 }
 
 .feedback-paragraph {
-  padding:0 1rem;
+  padding: 0 2rem;
+  max-width: 50%;
 
   h3 {
     color: $white_color;
     font-size: size("xl");
+  }
+
+  h4 {
+    color: $yellow_color;
+  }
+
+  .user-feedback-name {
+    padding-top: 25%;
+
+    p {
+      color:$white_color;
+    }
   }
 }
 
@@ -223,6 +232,6 @@ header {
   left: 50%;
   font-size: size("xxl");
   background-color: $green_color;
-  color:rgb(11, 60, 36);
+  color: rgb(11, 60, 36);
   box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.47);
 }
