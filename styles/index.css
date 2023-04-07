@@ -25,6 +25,10 @@ button {
   font-weight: bold;
 }
 
+i {
+  cursor: pointer;
+}
+
 h4,
 p {
   font-family: "Inter", sans-serif;
@@ -390,7 +394,7 @@ footer ul {
 .footer-main-gp {
   position: relative;
   padding: 1rem;
-  width: 17rem;
+  width: 19rem;
 }
 
 .footer-button {
@@ -417,6 +421,10 @@ footer ul {
   width: 100%;
   background-color: gray;
   top: -50%;
+}
+
+.social-media {
+  font-size: 1.4rem;
 }
 
 .nav,

@@ -349,7 +349,7 @@ footer {
 .footer-main-gp {
   position: relative;
   padding: 1rem;
-  width: 17rem;
+  width: 19rem;
 }
 
 .footer-button {
@@ -377,4 +377,8 @@ footer {
     background-color: $gray_color;
     top: -50%;
   }
+}
+
+.social-media {
+  font-size: size("l");
 }
