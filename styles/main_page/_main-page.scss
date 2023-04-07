@@ -219,7 +219,7 @@ header {
     padding-top: 25%;
 
     p {
-      color:$white_color;
+      color: $white_color;
     }
   }
 }
@@ -228,10 +228,32 @@ header {
   position: absolute;
   padding: 0.8rem;
   border-radius: 50%;
-  top: -10%;
+  top: -5%;
   left: 50%;
   font-size: size("xxl");
   background-color: $green_color;
   color: rgb(11, 60, 36);
   box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.47);
+}
+
+// Social Media Section
+
+.social-media-title {
+  text-align: center;
+  padding: 0.5rem;
+
+  h2 {
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  }
+
+  .social-media {
+    padding: 0.5rem;
+    color: $green_color;
+    font-size: size("l");
+    letter-spacing: 0.2rem;
+  }
+
 }

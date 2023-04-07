@@ -287,12 +287,27 @@ header {
   position: absolute;
   padding: 0.8rem;
   border-radius: 50%;
-  top: -10%;
+  top: -5%;
   left: 50%;
   font-size: 2rem;
   background-color: rgb(18, 85, 53);
   color: rgb(11, 60, 36);
   box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.47);
+}
+
+.social-media-title {
+  text-align: center;
+  padding: 0.5rem;
+}
+.social-media-title h2::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-media-title .social-media {
+  padding: 0.5rem;
+  color: rgb(18, 85, 53);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
 }
 
 .nav,
