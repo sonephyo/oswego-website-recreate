@@ -33,9 +33,50 @@
     font-weight: bold;
   }
 
-  ul {
+  .display-nav {
     @include flex(row);
     justify-content: flex-end;
+  }
+
+  .position {
+    position: relative;
+  }
+
+  .hovered-nav {
+    @include font-main();
+    display:none;
+    padding: 1rem;
+    margin: 0.5rem;
+    position: absolute;
+    font-size: size("sm");
+    right: 0;
+
+    background-color: $green_color;
+    color: $white_color;
+    width: 15rem;
+    border-radius: 5px;
+
+    &::before {
+      content: ""; // Add content for the pseudo-element
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 1rem 1rem 1rem;
+      border-color: transparent transparent $green_color transparent;
+      transform: rotate(0deg);
+
+      position: absolute;
+      right: 10%;
+      top: -4%;
+    }
+    
+    &:hover {
+      display:block;
+    }
+  }
+
+  .hover-tag:hover + .hovered-nav {
+    display: block;
   }
 
   li {
@@ -78,3 +119,5 @@
   color: white;
   background-color: $green_color;
 }
+
+// Hover effect

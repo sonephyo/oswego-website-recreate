@@ -458,10 +458,44 @@ footer ul {
   font-size: 0.8rem;
   font-weight: bold;
 }
-.top-sub-sub-sub-nav ul {
+.top-sub-sub-sub-nav .display-nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+.top-sub-sub-sub-nav .position {
+  position: relative;
+}
+.top-sub-sub-sub-nav .hovered-nav {
+  font-family: "Inter", sans-serif;
+  display: none;
+  padding: 1rem;
+  margin: 0.5rem;
+  position: absolute;
+  font-size: 0.9rem;
+  right: 0;
+  background-color: rgb(18, 85, 53);
+  color: white;
+  width: 15rem;
+  border-radius: 5px;
+}
+.top-sub-sub-sub-nav .hovered-nav::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 1rem 1rem 1rem;
+  border-color: transparent transparent rgb(18, 85, 53) transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  right: 10%;
+  top: -4%;
+}
+.top-sub-sub-sub-nav .hovered-nav:hover {
+  display: block;
+}
+.top-sub-sub-sub-nav .hover-tag:hover + .hovered-nav {
+  display: block;
 }
 .top-sub-sub-sub-nav li {
   padding: 0.5rem 1rem;
