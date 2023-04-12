@@ -42,13 +42,15 @@
     position: relative;
   }
 
+
   .hovered-nav {
     @include font-main();
     display:none;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: 0.5rem 1rem;
     position: absolute;
     font-size: size("sm");
+    background-origin: padding-box;
+    top: 100%;
     right: 0;
 
     background-color: $green_color;
@@ -77,6 +79,7 @@
 
   .hover-tag:hover + .hovered-nav {
     display: block;
+    animation: nav_animation 300ms ease-out both;
   }
 
   li {
@@ -120,4 +123,15 @@
   background-color: $green_color;
 }
 
-// Hover effect
+
+@keyframes nav_animation {
+  0% {
+    transform: translateY(7px);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

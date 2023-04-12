@@ -469,10 +469,11 @@ footer ul {
 .top-sub-sub-sub-nav .hovered-nav {
   font-family: "Inter", sans-serif;
   display: none;
-  padding: 1rem;
-  margin: 0.5rem;
+  padding: 0.5rem 1rem;
   position: absolute;
   font-size: 0.9rem;
+  background-origin: padding-box;
+  top: 100%;
   right: 0;
   background-color: rgb(18, 85, 53);
   color: white;
@@ -496,6 +497,7 @@ footer ul {
 }
 .top-sub-sub-sub-nav .hover-tag:hover + .hovered-nav {
   display: block;
+  animation: nav_animation 300ms ease-out both;
 }
 .top-sub-sub-sub-nav li {
   padding: 0.5rem 1rem;
@@ -532,4 +534,15 @@ footer ul {
   border-radius: 50%;
   color: white;
   background-color: rgb(18, 85, 53);
+}
+
+@keyframes nav_animation {
+  0% {
+    transform: translateY(7px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */
