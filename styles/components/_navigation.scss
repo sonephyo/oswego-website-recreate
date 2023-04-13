@@ -77,6 +77,11 @@
     }
   }
 
+  .display-nav:hover .hover-tag{
+    animation: nav-hover-font-color 300ms ease-out both;
+
+  }
+
   .hover-tag:hover + .hovered-nav {
     display: block;
     animation: nav_animation 300ms ease-out both;
@@ -133,5 +138,17 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes nav-hover-font-color {
+  0% {
+    color:$green_color;
+    opacity: 1;
+  }
+
+  100% {
+    color:gray;
+    opacity: 0.5;
   }
 }

@@ -495,6 +495,9 @@ footer ul {
 .top-sub-sub-sub-nav .hovered-nav:hover {
   display: block;
 }
+.top-sub-sub-sub-nav .display-nav:hover .hover-tag {
+  animation: nav-hover-font-color 300ms ease-out both;
+}
 .top-sub-sub-sub-nav .hover-tag:hover + .hovered-nav {
   display: block;
   animation: nav_animation 300ms ease-out both;
@@ -544,5 +547,15 @@ footer ul {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes nav-hover-font-color {
+  0% {
+    color: rgb(18, 85, 53);
+    opacity: 1;
+  }
+  100% {
+    color: gray;
+    opacity: 0.5;
   }
 }/*# sourceMappingURL=index.css.map */
