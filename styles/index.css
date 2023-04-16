@@ -500,7 +500,7 @@ footer ul {
 }
 .top-sub-sub-sub-nav .hover-tag:hover + .hovered-nav {
   display: block;
-  animation: nav_animation 300ms ease-out both;
+  animation: nav_animation 300ms ease-out 1;
 }
 .top-sub-sub-sub-nav li {
   padding: 0.5rem 1rem;

@@ -42,10 +42,9 @@
     position: relative;
   }
 
-
   .hovered-nav {
     @include font-main();
-    display:none;
+    display: none;
     padding: 0.5rem 1rem;
     position: absolute;
     font-size: size("sm");
@@ -71,20 +70,19 @@
       right: 10%;
       top: -4%;
     }
-    
+
     &:hover {
-      display:block;
+      display: block;
     }
   }
 
-  .display-nav:hover .hover-tag{
+  .display-nav:hover .hover-tag {
     animation: nav-hover-font-color 300ms ease-out both;
-
   }
 
   .hover-tag:hover + .hovered-nav {
     display: block;
-    animation: nav_animation 300ms ease-out both;
+    animation: nav_animation 300ms ease-out 1;
   }
 
   li {
@@ -128,7 +126,6 @@
   background-color: $green_color;
 }
 
-
 @keyframes nav_animation {
   0% {
     transform: translateY(7px);
@@ -143,12 +140,12 @@
 
 @keyframes nav-hover-font-color {
   0% {
-    color:$green_color;
+    color: $green_color;
     opacity: 1;
   }
 
   100% {
-    color:gray;
+    color: gray;
     opacity: 0.5;
   }
 }
