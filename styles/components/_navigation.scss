@@ -8,7 +8,7 @@
 }
 
 .nav {
-  justify-content: space-between;
+  justify-content: space-around;
 
   height: 7rem;
   padding: 1rem 3rem;
@@ -49,7 +49,7 @@
     position: absolute;
     font-size: size("sm");
     background-origin: padding-box;
-    top: 100%;
+    top: 120%;
     right: 0;
 
     background-color: $green_color;
@@ -76,6 +76,11 @@
     }
   }
 
+  .hover-tag {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
   .display-nav:hover .hover-tag {
     animation: nav-hover-font-color 300ms ease-out both;
   }
@@ -84,10 +89,10 @@
     display: block;
     animation: nav_animation 300ms ease-out 1;
   }
+}
 
-  li {
-    padding: 0.5rem 1rem;
-  }
+.upper_nav li, .hovered-nav li {
+  padding: 0.5rem 1rem;
 }
 
 .sub-1 {

@@ -1,0 +1,21 @@
+// Large Screen Sizes
+@media only screen and (max-width:1200px) {
+  * {
+    font-size: 95%;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+
+  img {
+    height: auto;
+    width: 50%;
+    max-width: 1200px;
+    object-fit: cover;
+  }
+
+  .main-body p {
+    font-size: size("s");
+  }
+}

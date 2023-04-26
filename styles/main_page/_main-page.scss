@@ -344,13 +344,14 @@ footer {
 }
 
 .footer-right-gp {
+  width: 70%;
   @include flex(row);
 }
 
 .footer-main-gp {
   position: relative;
   padding: 1rem;
-  width: 19rem;
+  width: 100%;
 }
 
 .footer-button {
@@ -358,6 +359,7 @@ footer {
   color: $white_color;
   background-color: black;
   border: 2px solid $white_color;
+  white-space: nowrap;
 }
 
 .footer-bottom {
@@ -365,6 +367,7 @@ footer {
   width: 90%;
   color: $white_color;
   padding: 1rem;
+
 
   @include flex(row);
   justify-content: space-between;

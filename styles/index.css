@@ -73,7 +73,7 @@ h2::before {
 
 p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5rem;
 }
 
@@ -171,7 +171,7 @@ header {
 .trending-now .grid {
   padding: 0 4rem;
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -233,7 +233,7 @@ header {
 .value-and-outcome .grid {
   padding: 0 4rem;
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -387,6 +387,7 @@ footer ul {
 }
 
 .footer-right-gp {
+  width: 70%;
   display: flex;
   flex-direction: row;
 }
@@ -394,7 +395,7 @@ footer ul {
 .footer-main-gp {
   position: relative;
   padding: 1rem;
-  width: 19rem;
+  width: 100%;
 }
 
 .footer-button {
@@ -402,6 +403,7 @@ footer ul {
   color: white;
   background-color: black;
   border: 2px solid white;
+  white-space: nowrap;
 }
 
 .footer-bottom {
@@ -435,7 +437,7 @@ footer ul {
 }
 
 .nav {
-  justify-content: space-between;
+  justify-content: space-around;
   height: 7rem;
   padding: 1rem 3rem;
   background-color: whitesmoke;
@@ -473,7 +475,7 @@ footer ul {
   position: absolute;
   font-size: 0.9rem;
   background-origin: padding-box;
-  top: 100%;
+  top: 120%;
   right: 0;
   background-color: rgb(18, 85, 53);
   color: white;
@@ -495,6 +497,10 @@ footer ul {
 .top-sub-sub-sub-nav .hovered-nav:hover {
   display: block;
 }
+.top-sub-sub-sub-nav .hover-tag {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+}
 .top-sub-sub-sub-nav .display-nav:hover .hover-tag {
   animation: nav-hover-font-color 300ms ease-out both;
 }
@@ -502,7 +508,8 @@ footer ul {
   display: block;
   animation: nav_animation 300ms ease-out 1;
 }
-.top-sub-sub-sub-nav li {
+
+.upper_nav li, .hovered-nav li {
   padding: 0.5rem 1rem;
 }
 
@@ -557,5 +564,70 @@ footer ul {
   100% {
     color: gray;
     opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  * {
+    font-size: 95%;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  img {
+    height: auto;
+    width: 50%;
+    max-width: 1200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-body p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-body,
+  .future-lakers,
+  .feedback,
+  .footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  .menu p {
+    font-size: 1.8rem;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+  .top-sub-nav {
+    display: none;
+  }
+  .trending-now .grid {
+    padding: 0 4rem;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trending-now .grid-element:last-child {
+    grid-column: 1/3;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .value-and-outcome .grid {
+    padding: 0 4rem;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .value-and-outcome p {
+    font-size: 0.9rem;
+  }
+  .feedback-paragraph h3 {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,59 @@
+@media only screen and (max-width: 992px) {
+  //Paddings
+  .main-body,
+  .future-lakers,
+  .feedback,
+  .footer {
+    padding-left: $main_padding_for_tablets;
+    padding-right: $main_padding_for_tablets;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .menu p {
+    font-size: size("xl");
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .top-sub-nav {
+    display: none;
+  }
+
+  // Trending Now
+  .trending-now {
+    .grid {
+      @include grid(2);
+    }
+
+    .grid-element:last-child {
+      grid-column: 1/3;
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  // Value and Outcome
+  .value-and-outcome {
+    .grid {
+      @include grid(2);
+    }
+
+    p{
+        font-size: size("sm");
+    }
+  }
+
+  //Feedback
+
+  .feedback-paragraph {
+    h3 {
+      font-size: size("ml");
+    }
+  }
+}

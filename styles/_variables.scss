@@ -1,20 +1,19 @@
 //Font sizes
 
 $font-sizes: (
-    "xxs": 0.4rem,
-    "xs" : 0.6rem,
-    "s" : 0.8rem,
-    "sm": 0.9rem,
-    "m" : 1rem,
-    "ml": 1.2rem,
-    "l" : 1.4rem,
-    "xl" : 1.8rem,
-    "xxl" : 2rem,
-    "xxxl" : 2.4rem,
-    "sub-header": 2.5rem,
-    "header": 6rem
+  "xxs": 0.4rem,
+  "xs": 0.6rem,
+  "s": 0.8rem,
+  "sm": 0.9rem,
+  "m": 1rem,
+  "ml": 1.2rem,
+  "l": 1.4rem,
+  "xl": 1.8rem,
+  "xxl": 2rem,
+  "xxxl": 2.4rem,
+  "sub-header": 2.5rem,
+  "header": 6rem,
 );
-
 
 // Colors
 $yellow_color: rgb(236, 199, 36);
@@ -23,5 +22,5 @@ $green_color: rgb(18, 85, 53);
 $gray_color: gray;
 $darkgray_color: rgb(27, 27, 27);
 
-
 $main_padding: 4rem;
+$main_padding_for_tablets: 3rem;
