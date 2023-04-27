@@ -566,7 +566,7 @@ footer ul {
     opacity: 0.5;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 992px) {
   * {
     font-size: 95%;
   }
@@ -583,6 +583,10 @@ footer ul {
   .main-body p {
     font-size: 0.8rem;
   }
+  .menu p {
+    display: none;
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main-body,
@@ -596,13 +600,24 @@ footer ul {
     font-size: 4.5rem;
   }
   .menu p {
+    display: block;
     font-size: 1.8rem;
   }
   .nav {
     justify-content: space-between;
   }
+  .admitted-students-div {
+    height: 30vh;
+  }
   .top-sub-nav {
     display: none;
+  }
+  .future-lakers {
+    height: auto;
+  }
+  .future-lakers .two-girls-happy {
+    height: 300px;
+    width: auto;
   }
   .trending-now .grid {
     padding: 0 4rem;
@@ -629,5 +644,8 @@ footer ul {
   }
   .feedback-paragraph h3 {
     font-size: 1.2rem;
+  }
+  footer {
+    height: 50vh;
   }
 }/*# sourceMappingURL=index.css.map */

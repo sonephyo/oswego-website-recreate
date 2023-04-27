@@ -12,16 +12,33 @@
     font-size: 4.5rem;
   }
 
-  .menu p {
-    font-size: size("xl");
+  .menu{
+    p {
+      display: block;
+      font-size: size("xl");
+    }
   }
 
   .nav {
     justify-content: space-between;
   }
 
+  // Admitted Student
+  .admitted-students-div {
+    height: 30vh;
+  }
+
   .top-sub-nav {
     display: none;
+  }
+  // Future Lakers
+
+  .future-lakers {
+    height: auto;
+        .two-girls-happy {
+       height: 300px;
+       width: auto;
+    }
   }
 
   // Trending Now
@@ -55,5 +72,11 @@
     h3 {
       font-size: size("ml");
     }
+  }
+
+  //Footer 
+
+  footer {
+    height: 50vh;
   }
 }

@@ -1,5 +1,5 @@
 // Large Screen Sizes
-@media only screen and (max-width:1200px) {
+@media only screen and (min-width: 992px) {
   * {
     font-size: 95%;
   }
@@ -17,5 +17,12 @@
 
   .main-body p {
     font-size: size("s");
+  }
+
+  .menu {
+    p {
+      display: none;
+      font-size: size("xl");
+    }
   }
 }
