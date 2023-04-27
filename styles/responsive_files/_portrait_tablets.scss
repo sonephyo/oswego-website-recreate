@@ -1,3 +1,49 @@
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
+  //Paddings
+  .main-body,
+  .future-lakers,
+  .feedback,
+  .footer {
+    padding-left: $main_padding_for_portrait_tablets;
+    padding-right: $main_padding_for_portrait_tablets;
+  }
 
+  // Future lakers
+
+    .future-lakers {
+    height: auto;
+        .two-girls-happy {
+       height: 200px;
+       width: auto;
+    }
+  }
+
+  //Footer
+  footer {
+    height: 100vh;
+  }
+
+  .upper-footer {
+    flex-direction: column;
+
+    #footer-oswego {
+      width: 50%;
+    }
+
+    .footer-right-gp {
+      flex-direction: column;
+    }
+
+    .footer-button {
+      display: none;
+    }
+  }
+
+  .footer-bottom {
+    width: 80%;
+  }
+  
+  .footer-bottom::before {
+    width: 90%;
+  }
 }

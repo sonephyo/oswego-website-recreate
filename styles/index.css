@@ -648,4 +648,41 @@ footer ul {
   footer {
     height: 50vh;
   }
+}
+@media only screen and (max-width: 768px) {
+  .main-body,
+  .future-lakers,
+  .feedback,
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .future-lakers {
+    height: auto;
+  }
+  .future-lakers .two-girls-happy {
+    height: 200px;
+    width: auto;
+  }
+  footer {
+    height: 100vh;
+  }
+  .upper-footer {
+    flex-direction: column;
+  }
+  .upper-footer #footer-oswego {
+    width: 50%;
+  }
+  .upper-footer .footer-right-gp {
+    flex-direction: column;
+  }
+  .upper-footer .footer-button {
+    display: none;
+  }
+  .footer-bottom {
+    width: 80%;
+  }
+  .footer-bottom::before {
+    width: 90%;
+  }
 }/*# sourceMappingURL=index.css.map */
