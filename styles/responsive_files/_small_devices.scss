@@ -1,0 +1,88 @@
+@media only screen and (max-width: 600px) {
+  //Utility Classes
+  h1 {
+    font-size: 4rem;
+  }
+
+  // Main Body
+
+  .main-body {
+    padding-top: 10rem;
+    height: 90%;
+  }
+
+  //Admitted Students
+
+  .admitted-students-div {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .future-lakers {
+    flex-direction: column;
+    .two-girls-happy {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  //Trending Now
+
+  .trending-now {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-element:last-child {
+      grid-column: initial;
+      justify-content: initial;
+      width: initial;
+      margin: initial;
+    }
+  }
+
+  //Vibrant Community
+  .vibrant-community {
+    .container {
+      width: 100%;
+    }
+  }
+
+  //Values and Outcomes
+  .value-and-outcome {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  //Feedback
+
+  .feedback-flex {
+    flex-direction: column;
+
+    .feedback-paragraph {
+      max-width: 100%;
+      padding-top: 1rem;
+    }
+  }
+
+  .feedback-paragraph .user-feedback-name {
+    padding-top: 10%;
+  }
+
+  //Go Oswego
+
+  .go-oswego-section h2 {
+    font-size: 2rem;
+  }
+
+  //footer
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom::before {
+    top:-30%;
+  }
+}

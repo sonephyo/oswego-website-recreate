@@ -145,6 +145,7 @@ header {
   color: white;
   padding: 1rem;
   margin: 1rem;
+  white-space: nowrap;
 }
 .admitted-students-div h2::before {
   left: 50%;
@@ -646,7 +647,8 @@ footer ul {
     font-size: 1.2rem;
   }
   footer {
-    height: 50vh;
+    height: auto;
+    padding-bottom: 200px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -665,7 +667,7 @@ footer ul {
     width: auto;
   }
   footer {
-    height: 100vh;
+    padding-bottom: 200px;
   }
   .upper-footer {
     flex-direction: column;
@@ -684,5 +686,60 @@ footer ul {
   }
   .footer-bottom::before {
     width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .main-body {
+    padding-top: 10rem;
+    height: 90%;
+  }
+  .admitted-students-div {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .future-lakers {
+    flex-direction: column;
+  }
+  .future-lakers .two-girls-happy {
+    height: 100%;
+    width: auto;
+  }
+  .trending-now .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trending-now .grid-element:last-child {
+    grid-column: initial;
+    justify-content: initial;
+    width: initial;
+    margin: initial;
+  }
+  .vibrant-community .container {
+    width: 100%;
+  }
+  .value-and-outcome .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feedback-flex {
+    flex-direction: column;
+  }
+  .feedback-flex .feedback-paragraph {
+    max-width: 100%;
+    padding-top: 1rem;
+  }
+  .feedback-paragraph .user-feedback-name {
+    padding-top: 10%;
+  }
+  .go-oswego-section h2 {
+    font-size: 2rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-bottom::before {
+    top: -30%;
   }
 }/*# sourceMappingURL=index.css.map */
