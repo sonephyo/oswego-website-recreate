@@ -1,5 +1,6 @@
 # HTML and CSS Practice Repo
 This repository was created with the sole purpose of practicing HTML and CSS. The materials and concepts used in this repository are taken from Oswego University as a reference.
+The website is not up to date.
 
 # Credits
 All the credits for the materials and concepts used in this repository go to Oswego University. We thank them for providing a great resource for learning web development.
